@@ -16,3 +16,35 @@ margin-right: auto;
     width: 289px;
     height: 388px;
 }
+
+.pulseit{
+	-webkit-animation: pulse linear .5s infinite;
+	animation: pulse linear .5s infinite;
+}
+@-webkit-keyframes pulse {
+	0% { width:200px; }
+	50% { width:340px; }
+	100% { width:200px; }
+}
+@keyframes pulse {
+	0% { width:200px; }
+	50% { width:340px; }
+	100% { width:200px; }
+}
+
+/* Flash class and keyframe animation */
+.flashit{
+  color:#f2f;
+	-webkit-animation: flash linear 1s infinite;
+	animation: flash linear 1s infinite;
+}
+@-webkit-keyframes flash {
+	0% { opacity: 1; }
+	50% { opacity: .1; }
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; }
+	50% { opacity: .1; }
+	100% { opacity: 1; }
+}
